@@ -1,4 +1,4 @@
-const BASE = import.meta.env.VITE_API_URL || '/api';
+const BASE = 'bball-backend-production.up.railway.app/api';
 let _a = localStorage.getItem('at'), _r = localStorage.getItem('rt');
 const save  = (a,r) => { _a=a; _r=r; localStorage.setItem('at',a); localStorage.setItem('rt',r); };
 const clear = ()    => { _a=_r=null; localStorage.removeItem('at'); localStorage.removeItem('rt'); };
